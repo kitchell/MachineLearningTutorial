@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Machine Learning Tutorial">
+  <meta name="author" content="Lindsey M Kitchell">
+
+  <title>Machine Learning</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><strong>Machine Learning</strong></div>
+      <div class="list-group list-group-flush">
+        <a href="1introtodeeplearning.html" class="list-group-item list-group-item-action bg-light">1. What is Machine Learning?</a>
+   
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://lindseykitchell.weebly.com/">About the Author</a>
+            </li>
+<!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+-->
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1>What is Machine Learning?</h1>
+<hr>
+
+          <p>Machine learning is a subfield of artificial intelligence that focuses on teaching computers 
+              how to learn without being specifically programmed for certain tasks. The idea is to create 
+              algorithms that learn from data and make predictions on data. Machine learning can be split 
+              into several categories:</p>
+          
+            <ul>
+                <li><strong>Supervised learning</strong>: the computer is given training data and the desired output from that data (e.g. category labels) and it has to learn from the training data in order to make meaningful predictions based on new data.</li>
+
+                <li><strong>Unsupervised learning</strong>: the computer is given data only and it has to find meaningful structure or groups in the data by itself with no supervision.</li> 
+
+                <li><strong>Semisupervised learning</strong>: the computer is given both labeled data and unlabeled data. Labeling large datasets can be time consuming, so typically there is a small amount of labeled data and a large amount of unlabeled data. </li>
+                
+                <li><strong>Reinforcement learning</strong>: the computer is interacting with the environment and learning via feedback which behaviors generate rewards. </li>
+            </ul>
+            
+          
+          <p>This <a href="https://samrose3.github.io/algorithm-explorer/">Alogorithm Explorer</a> can help you figure out what type of machine learning algorithm you need.</p>
+          
+          
+            <h2>Supervised Learning</h2> 
+
+          <p>Supervised learning is typcially used for <strong>Classification</strong> and <strong>Regression</strong> problems.</p>
+   
+          <h3>Classification</h3>
+          <p>Classification algorithms are used when you have defined labels for your data and you want the model to predict the label of new data. Classification can be binary (only two labels possible for your data) or multi-class (more than 2 possible labels). </p>
+          <p><strong>Example Algorithms:</strong></p>
+          <ul>
+          <li>Logistic Regression</li>
+          <li>Nearest Neighbor</li>
+          <li>Guassian Naive Bayes</li>
+          <li>Decision Trees</li>
+          <li>Support Vector Machine</li>
+          <li>Random Forest</li></ul>
+          
+          
+          <h3>Regression</h3>
+          <p>Regression algorithms are used when you want to predict a <i>continuous</i> value for new data.</p>
+        <p><strong>Example Algorithms:</strong></p>
+          <ul>
+              <li>Linear Regression</li>
+              <li>Decision Trees</li>
+              <li>Nearest Neighbor</li>
+              
+              </ul>
+           
+          <h2>Unsupervised Learning</h2>
+          <p>Unsupervised Learning is typically used when you do not have labeled data or you want the model to find patterns, structures, or groups in the data. It is used for <strong>clustering</strong> and <strong>association.</strong></p>
+          
+          <h3>Clustering</h3>
+          <p>Clustering algorithms are used when you want to divide your data into groups where the items in the group have similar traits.</p>
+
+          <p><strong>Example Algorithms:</strong></p>
+          <ul>
+          <li>K-Means</li>
+            <li>Gaussian Mixture Model</li>
+              <li>DBSCAN (Density-Based Spatial Clustering of Applications with Noise)</li>
+              <li>Agglomerative Hierarchical Clustering</li>
+          </ul>
+            
+          <h3>Association</h3>
+          <p>Association rules are used to uncover interesting relationships between data objects in large datasets or databases. </p>
+          
+          <p><strong>Example Algorithms:</strong></p>
+          <ul>
+          <li>Apriori algorithm</li>
+          </ul>
+          
+          <h2>Semisupervised Learning</h2>
+          <p>Semisupervised learning is used when there is some labeled data, but not all of it is labeled. The labeled data is used to help identify that there is structure to the data and suggests what it might be and the unlabeled data is used to further refine what that struture is. </p>
+          <p><strong>Example Methods</strong></p>
+          <ul>
+          <li>Pseudo Labeling or Proxy Labeling</li>
+          </ul>
+          
+          <h2>Reinforcement Learning</h2>
+          
+          <p>Reinforcement learning algorithms are used when you are able to continually update your model with new data. Typically this will be used with an object that is interacting with its environment (e.g. robot, self-driving car).</p>
+          
+          
+          <p><strong>Example Algorithms:</strong></p>
+          <ul>
+          <li>Temporal Difference</li>
+              <li>Q-learning</li>
+          </ul>
+          
+          <p><b>Please continue on to the next section <a href="">2. Intro to SciKit-Learn</a>. SciKit-Learn is a python library for machine learning.</b></p>
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
+

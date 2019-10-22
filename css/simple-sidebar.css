@@ -1,0 +1,143 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+  font-family: Source Sans Pro;
+  color: #6B463F;
+  font-weight: 300;
+  background-color: #EAE7DC
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #962005, rgba(0, 0, 0, 0));
+}
+
+a {
+    color:#E85A4F;
+}
+
+h1{
+    padding-bottom: 0px;
+    font-weight: 700;
+    text-align: center;
+    color:  #FF8369;
+}
+h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    color:  #FF8369;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+/*    text-decoration: underline;*/
+    font-weight: 400;
+    color:  #FF8369;
+}
+
+code {
+    color:black;
+    font-size: .75rem;
+    background-color: #EBEDEF
+}
+
+.code {
+    overflow: auto;
+}
+
+pre {
+    background-color: #EBEDEF;
+    padding: 20px;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+font-weight: 600;
+}
+
+.bg-light {
+color: #E85A4F;
+background-color: #D8C3A5!important;
+}
+
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+  font-size: .8rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.btn {
+    background-color: #E85A4F;
+}
+
+.btn-primary {
+    color:#FFFFFF;
+    border-color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active{
+    background-color: #F8BAAC;
+    border-color: #F8BAAC;
+}
+.btn-primary:focus{
+    box-shadow: none;
+}
+.container-fluid {
+padding: 20px;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+/*  width: 50%;*/
+}
+
+.btmpg {
+    font-size: .8rem;
+}
